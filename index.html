@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvanshankar S - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            flex: 1;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77a1d3 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content ul li {
+            padding: 5px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+    <script>
+        function loadExperience() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("experience").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "experience.html", true);
+            xhttp.send();
+        }
+        window.onload = function() {
+            loadExperience();
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Yuvanshankar S</h1>
+            <p style="text-align: center;">Artificial Intelligence & Machine Learning Enthusiast</p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: syuvanshankar04@gmail.com</li>
+                <li>Phone: (+91) 7395989130</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/yuvanshankar-suresh-b52696270" target="_blank">Yuvanshankar Suresh</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Summary</h2>
+            <p>I am a highly motivated individual with a keen interest in the domain of Artificial Intelligence and Machine Learning. My passion lies in exploring and developing cutting-edge technologies in Generative AI. I am eager to contribute to innovative projects that push the boundaries of what AI can achieve. My objective is to leverage my skills and knowledge to make a meaningful impact in the field of AI/ML, driving advancements that benefit society.</p>
+        </div>
+        <div class="content" id="experience">
+            <h2>Professional Experience</h2>
+            <ul>
+                
+                <li><strong>AI/ML Intern</strong> - Data Aces Private Limited (2023)</li>
+                <ul>
+                    <li>Utilized leading Natural Language Processing (NLP) models, including Bert, Roberta, and spaCy, to achieve comprehensive text classification and summarization capabilities.</li>
+                    <li>Demonstrated the power of AI in healthcare by constructing a bespoke dataset and fine-tuning the Chat Bison model within Google Cloud Vertex AI, facilitating the exploration of diverse treatment options.</li>
+                    <li>Developed an open-source chatbot leveraging Chroma DB and Qdrant for vector storage, seamlessly integrating Dolly and Llama to enhance contextual understanding.</li>
+                </ul>
+            </ul>
+            
+        </div>
+        <div class="content">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Tech in Electronics and Computer Engineering</strong> - VIT Chennai (2021-present, 9.46 CGPA)</li>
+                <li><strong>Higher Secondary Education</strong> - Devi Academy, Chennai (2019-2021, Class 12: 93.6%)</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Java, Python, C++, C, SQL Plus, R</li>
+                <li><strong>Tools:</strong> Cadence, Matlab, Keil Vision, Arduino IDE, RoboFlow, Cisco Packet Tracer</li>
+                <li><strong>Personal Skills:</strong> Analytical thinking, decision-making, finance management, problem-solving</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Autonomous ROV with AR Integration for Subsea Pipeline Anomaly Detection (2023)</strong></li>
+                <ul>
+                    <li>Developed a conceptual design for an autonomous ROV equipped with advanced sensors to acquire high-resolution data for subsea pipeline inspection.</li>
+                    <li>Integrated image processing algorithms to enhance clarity and detect anomalies.</li>
+                    <li>Proposed the use of AR to improve operator situational awareness and inspection efficiency.</li>
+                </ul>
+                <li><strong>Code Translator (2024)</strong></li>
+                <ul>
+                    <li>Engineered a code translation system utilizing the Gemini Chat Bison model to convert code snippets between different programming languages.</li>
+                    <li>Implemented features to ensure accurate and efficient translation, supporting a wide range of languages.</li>
+                </ul>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>Awards</h2>
+            <ul>
+                <li>Top 10 Meritorious Award - Awarded thrice for outstanding academic performance and excellence.</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Declaration</h2>
+            <p>I hereby declare that the above information is true to the best of my knowledge and belief.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Yuvanshankar S</p>
+    </footer>
+</body>
+</html>
